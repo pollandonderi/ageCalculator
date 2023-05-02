@@ -1,0 +1,116 @@
+$Off-white: hsl(0, 0%, 94%);
+$White: hsl(0, 0%, 100%);
+$Smokey-grey: hsl(0, 1%, 44%);
+$Purple: hsl(259, 100%, 65%);
+$Light-grey: hsl(0, 0%, 86%);
+@font-face {
+    font-family: 'MyFont';
+    src: url('/assets/Poppins/Poppins-Regular.ttf');
+  }
+@font-face {
+    font-family: 'Bolditalic';
+    src: url('/assets/Poppins/Poppins-ExtraBold.ttf');
+  }
+@font-face {
+    font-family: 'Bold';
+    src: url('/assets/Poppins/Poppins-SemiBold.ttf');
+  }
+
+.calculator-holder{
+    height: 100dvh;
+    height:100svh;
+    background-color: $Off-white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card-age{
+    background:white ;
+   max-width: 40%;
+   border-radius: 20px 20px 80px;
+   padding: 4rem;
+}
+.title{
+    font-family: 'MyFont';
+    text-transform: uppercase;
+    color: $Smokey-grey;
+    letter-spacing: 0.2rem;
+font-size: 0.6rem;
+padding-block: 0.2rem;
+font-weight: 800;
+}
+#year,#month,#day{
+    font-size: 1.4rem;
+    display: inline-block;
+    width: 100%;
+    gap: 0.5rem;
+    border-radius: 3px;
+    height: 80%;
+}
+.inputs{
+    display: flex;
+    gap: 1rem;
+    padding-block: 2rem;
+    font-family: 'Bold';
+}
+.submit-arrow{
+    z-index: 9999;
+    cursor: pointer;
+}
+.submit-arrow:hover{
+    background-color: black;
+
+}
+
+#icon{
+    
+    background-color: $Purple;
+    border-radius: 50%;
+    padding: .5rem;
+    z-index: 9999;
+}
+#icon:hover{
+    background-color: black;
+}
+.center{
+    display: flex;
+    // justify-content: center;
+    align-items: center;
+}
+#line{
+    border: 1px solid $Light-grey;
+    width: 100%;
+}
+.results{
+    padding-top: 2em;
+}
+.paragraph-results{
+    font-size: 3rem;
+    font-weight: 900;
+    font-family: 'Bolditalic';
+}
+#paragraph-years{
+    color: $Purple;
+}
+
+
+
+
+
+
+
+
+@media (width < 50em) {
+    .card-age{
+        background:white ;
+       max-width: 95%;
+       border-radius: 20px 20px 80px;
+    }
+    #line{
+        transform: translateY(32px);
+    }
+    .center{
+        flex-direction: column;
+    }
+    
+}

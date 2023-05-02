@@ -1,0 +1,56 @@
+<section class="calculator-holder">
+  <div class="card-age">
+    <form>
+      <div class="inputs">
+        <div>
+          <p class="title">day</p>
+          <input
+            type="text"
+            name="day"
+            id="day"
+            placeholder="DD"
+            minlength="1"
+            maxlength="2"
+            required
+          />
+        </div>
+        <div>
+          <p class="title">month</p>
+          <input
+            type="month"
+            name="month"
+            id="month"
+            placeholder="MM"
+            minlength="1"
+            maxlength="2"
+            required
+          />
+        </div>
+        <div>
+          <p class="title">year</p>
+          <input
+            type="text"
+            name="year"
+            id="year"
+            placeholder="YYYY"
+            minlength="4"
+            maxlength="4"
+            required
+          />
+        </div>
+      </div>
+
+      <div class="center">
+        <span id="line"></span>
+        <a class="submit-arrow " id="icon">
+        <img src="/assets/icon-arrow.svg" alt="" srcset="" />
+        </a>
+      </div>
+    </form>
+    <div class="results">
+      <p class="paragraph-results"> <span id="paragraph-years">--</span>years </p>
+      <p class="paragraph-results"> <span id="paragraph-years">--</span>months</p>
+      <p class="paragraph-results"> <span id="paragraph-years">--</span>days </p>
+    </div>
+  </div>
+</section>
